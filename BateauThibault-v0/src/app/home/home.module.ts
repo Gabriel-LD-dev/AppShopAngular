@@ -6,6 +6,7 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { ButtonComponent } from '../button/button.component';
+import { HeaderComponent } from '../header/header.component';
 
 
 @NgModule({
@@ -15,6 +16,6 @@ import { ButtonComponent } from '../button/button.component';
     IonicModule,
     HomePageRoutingModule,
   ],
-  declarations: [HomePage, ButtonComponent],
+  declarations: [HomePage, ButtonComponent, HeaderComponent],
 })
 export class HomePageModule {}
