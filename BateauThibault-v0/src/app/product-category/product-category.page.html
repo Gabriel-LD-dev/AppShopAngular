@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>productCategory</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button [routerLink]="['/products']" (click)="getProductDataFiltered(1)" > Poissons</ion-button>
+  <ion-button [routerLink]="['/products']" (click)="getProductDataFiltered(2)" > Coquillages </ion-button>
+  <ion-button [routerLink]="['/products']" (click)="getProductDataFiltered(3)" > Crustacés</ion-button>
+  <ion-button [routerLink]="['/products']" (click)="getProductDataFiltered(4)" > Promotions </ion-button>
+</ion-content>
