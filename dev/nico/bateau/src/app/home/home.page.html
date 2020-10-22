@@ -1,9 +1,8 @@
-<body>
+<ion-content>
 
-  <p>
-    Test !
-  </p>
+  <app-header></app-header>
 
-  <app-button [name] = "Test"></app-button>
+  <app-button *ngFor="let b of buttons" 
+  [name]="b.name" [link]="b.link" [img]="b.img"></app-button>
 
-</body>
+</ion-content>

@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
+//import { images } from '../constants/Images';
 
 @Component({
   selector: 'app-button',
@@ -8,10 +10,16 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ButtonComponent implements OnInit {
 
   @Input() name: string;
-  @Input() source: string;
+  @Input() link: string;
+  @Input() img: string;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
+  onNavigate(){
+    console.log(this.img);
+    this.router.navigate([this.link]);
+  }
 }

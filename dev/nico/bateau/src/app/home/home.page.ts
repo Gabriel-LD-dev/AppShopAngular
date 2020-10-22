@@ -9,12 +9,16 @@ export class HomePage {
 
   buttons = [
     {
-      name: "Test",
-      img: "../../assets/coquillage.png",
-      link: ""
-    }
+      name: "Products",
+      img: '../../assets/poisson.png',
+      link: "/products"
+    },
 
-    
+    {
+      name: "Recettes",
+      img: '../../assets/homard.png',
+      link: "/recettes"
+    }
   ]
 
   constructor() {}
