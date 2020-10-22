@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationExtras } from '@angular/router';
 //import { images } from '../constants/Images';
 
 @Component({
@@ -12,6 +12,7 @@ export class ButtonComponent implements OnInit {
   @Input() name: string;
   @Input() link: string;
   @Input() img: string;
+  @Input() data: any[];
 
   constructor(private router: Router) { }
 
@@ -19,7 +20,13 @@ export class ButtonComponent implements OnInit {
   }
 
   onNavigate(){
-    console.log(this.img);
-    this.router.navigate([this.link]);
+    let navigationExtras: NavigationExtras = {
+      queryParams: {
+        special: this.data
+      }
+    };
+
+
+    this.router.navigate([this.link], navigationExtras);
   }
 }
