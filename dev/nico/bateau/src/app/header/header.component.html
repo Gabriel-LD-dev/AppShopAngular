@@ -1,6 +1,13 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Test Header</ion-title>
-    <app-button [name]="Home" [link]="'/home'" [img]="'../../assets/homeLogo.png'"></app-button>
-  </ion-toolbar>
-</ion-header>
+<section>
+
+  <ion-button size="small" [routerLink]="['/home']" expand="full">
+    <ion-img src='../../assets/homeLogo.png'></ion-img>
+  </ion-button>
+
+  <ion-img src="../../assets/iTunesArtwork.png"></ion-img>
+
+  <ion-button size="small" [routerLink]="['/cart']" expand="full">
+    <ion-img src='../../assets/cartLogo.png'></ion-img>
+  </ion-button>
+
+</section>
