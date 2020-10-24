@@ -1,12 +1,18 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>productCategory</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header></app-header>
 
 <ion-content>
-  <ion-button [routerLink]="['/products']" (click)="getProductDataFiltered(1)" > Poissons</ion-button>
-  <ion-button [routerLink]="['/products']" (click)="getProductDataFiltered(2)" > Coquillages </ion-button>
-  <ion-button [routerLink]="['/products']" (click)="getProductDataFiltered(3)" > Crustacés</ion-button>
-  <ion-button [routerLink]="['/products']" (click)="getProductDataFiltered(4)" > Promotions </ion-button>
+
+  <div>
+
+    <app-button [name]="'Poissons'" [img]="'../../assets/poulpe.png'" [link]="'/products'"
+      [data]="getProductDataFiltered(0)"></app-button>
+    <app-button [name]="'Coquillages'" [img]="'../../assets/poulpe.png'" [link]="'/products'"
+      [data]="getProductDataFiltered(1)"></app-button>
+    <app-button [name]="'Crustacés'" [img]="'../../assets/poulpe.png'" [link]="'/products'"
+      [data]="getProductDataFiltered(2)"></app-button>
+    <app-button [name]="'Promotions'" [img]="'../../assets/poulpe.png'" [link]="'/products'"
+      [data]="getProductDataFiltered(3)"></app-button>
+
+  </div>
+
 </ion-content>

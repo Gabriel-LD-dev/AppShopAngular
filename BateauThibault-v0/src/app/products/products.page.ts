@@ -1,5 +1,6 @@
 import { WebserviceService } from './../services/webservice.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-products',
@@ -7,16 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./products.page.scss'],
 })
 export class ProductsPage implements OnInit {
-datas : Array<any>;
-  constructor(    private WebService: WebserviceService,
-    ) { }
+  products: any = [];
+
+  constructor() {  }
 
   ngOnInit() {
-    console.log(this.WebService.getProductData());
-    this.WebService.getProductData().subscribe((data) => {
-     this.datas= data;
-      console.log(data);
-    })
+    this.products = history.state.data;
+    console.log(this.products);
   }
 
 }

@@ -12,24 +12,22 @@ export class ProductCategoryPage implements OnInit {
   constructor(
     private webservice: WebserviceService,
   ) {
-    this.data = webservice.getProductData().subscribe((data) => {
-      this.data = data
+    webservice.getProductData().subscribe((datas) => {
+      this.data = datas
     });
   }
 
   getProductDataFiltered(value) {
-    console.log(value);
-    if (value == 1) {
-      return this.data.filter(el => el.category == 0);
+
+    if (this.data == undefined)
+      return [];
+
+    else if (value == 3) {
+      return this.data = this.data.filter(el => el.sale == true);
     }
-    if (value == 2) {
-      return this.data.filter(el => el.category == 1);
-    }
-    if (value == 3) {
-      return this.data.filter(el => el.category == 2);
-    }
-    if (value == 4) {
-      return this.data.filter(el => el.sale == true);
+
+    else {
+      return this.data.filter(el => el.category == value);
     }
 
   }

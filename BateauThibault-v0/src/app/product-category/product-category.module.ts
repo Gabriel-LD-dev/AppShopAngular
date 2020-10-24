@@ -8,6 +8,9 @@ import { ProductCategoryPageRoutingModule } from './product-category-routing.mod
 
 import { ProductCategoryPage } from './product-category.page';
 
+import { HeaderComponent } from '../header/header.component';
+import { ButtonComponent } from '../button/button.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +18,6 @@ import { ProductCategoryPage } from './product-category.page';
     IonicModule,
     ProductCategoryPageRoutingModule
   ],
-  declarations: [ProductCategoryPage]
+  declarations: [ProductCategoryPage, HeaderComponent, ButtonComponent]
 })
 export class ProductCategoryPageModule {}
