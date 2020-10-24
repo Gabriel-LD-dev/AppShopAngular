@@ -11,7 +11,7 @@ export class HomePage {
     {
       name: "Produits et Promotions",
       img: '../../assets/poisson.png',
-      link: "/products"
+      link: "/product-category"
     },
 
     {

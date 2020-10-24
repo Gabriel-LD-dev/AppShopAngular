@@ -12,8 +12,8 @@ export class ProductCategoryPage implements OnInit {
   constructor(
     private webservice: WebserviceService,
   ) {
-    this.data = webservice.getProductData().subscribe((data) => {
-      this.data = data
+    this.data = webservice.getProductData().subscribe((datas) => {
+      this.data = datas
     });
   }
 
