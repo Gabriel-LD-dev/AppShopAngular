@@ -1,13 +1,12 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Choisissez vos produits</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header></app-header>
 
 <ion-content>
+
+  <p>Choisissez votre catégorie de produits</p>
+
   <ion-list>
       <ion-item *ngFor="let data of datas"> 
-      <img src="/assets/icon/poulpe.png" alt="poulpe" width="32px">
+      <img src="../../assets/poulpe.png" alt="poulpe" width="32px">
       <ion-label> {{ data.name }} </ion-label> {{ data.price }} €
       </ion-item>
   </ion-list>

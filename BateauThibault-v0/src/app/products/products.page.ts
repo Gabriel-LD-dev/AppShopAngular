@@ -12,6 +12,7 @@ datas : Array<any>;
     ) { }
 
   ngOnInit() {
+    console.log(this.WebService.getProductData());
     this.WebService.getProductData().subscribe((data) => {
      this.datas= data;
       console.log(data);
