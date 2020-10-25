@@ -15,4 +15,17 @@ export class WebserviceService {
 
     return this.http.get<any[]>("../../assets/data/products.json").toPromise();
   }
+  
+
+  getBateauData(value: string){
+    return this.http.get<any[]>("../../assets/data/Boat.json").toPromise();
+  }
+
+  getRecetteData(){
+    return this.http.get<any[]>("../../assets/data/Recettes.js");
+  }
+
+  getRestaurantData(){
+    return this.http.get<any[]>("../../assets/data/Restaurant.js");
+  }
 }

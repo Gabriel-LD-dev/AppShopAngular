@@ -17,7 +17,7 @@ export class HomePage {
     {
       name: "Bateaux",
       img: '../../assets/ancre.png',
-      link: "/ships"
+      link: "/bateaux-category"
     },
 
     {
