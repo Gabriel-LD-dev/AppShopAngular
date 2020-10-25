@@ -23,7 +23,7 @@ export class HomePage {
     {
       name: "Restaurants",
       img: '../../assets/restaurant.png',
-      link: "/restaurants"
+      link: "/restaurant-list"
     },
 
     {

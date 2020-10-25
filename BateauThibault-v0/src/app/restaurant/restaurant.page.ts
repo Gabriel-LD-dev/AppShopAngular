@@ -1,3 +1,4 @@
+import { Router, NavigationExtras } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./restaurant.page.scss'],
 })
 export class RestaurantPage implements OnInit {
+  restaurant: any;
 
-  constructor() { }
+  constructor(private router: Router) {
+    this.restaurant = router.getCurrentNavigation().extras.state.data;
+    console.log(this.restaurant.name);
+  }
 
   ngOnInit() {
   }

@@ -1,0 +1,37 @@
+[
+    {
+        "id": 0,
+        "name": "Bistrot des Gascons",
+        "uri": "../../assets/desGascons.png",
+        "description": "description restaurant"
+    },
+    {
+        "id": 1,
+        "name": "Les fous de l'Ile",
+        "uri": "../../assets/fousDeLIle.png",
+        "description": "description restaurant"
+    },
+    {
+        "id": 2,
+        "name": "Bistrot Landais",
+        "uri": "../../assets/bistrotLandais.png",
+        "description": "description restaurant"
+    },
+    {
+        "id": 3,
+        "name": "Villa 9-Trois",
+        "uri": "../../assets/villa9Trois.png",
+        "description": "description restaurant"
+    },
+    {
+        "id": 4,
+        "name": "Bistrot du Sommelier",
+        "uri": "../../assets/duSommelier.png",
+        "description": "description restaurant"
+    },
+    {
+        "id": 5,
+        "name": "Devenez partenaire!",
+        "description": "Allez viens ! On est bien sur le bateau de Thibault !"
+    }
+]

@@ -16,15 +16,14 @@ export class ButtonComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  ngOnInit() {  }
+  ngOnInit() { }
 
-  onNavigate(){
+  onNavigate() {
     let navigationExtras: NavigationExtras = {
       state: {
         data: this.data
       }
     }
-
 
     this.router.navigate([this.link], navigationExtras);
   }

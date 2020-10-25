@@ -25,7 +25,7 @@ export class WebserviceService {
     return this.http.get<any[]>("../../assets/data/Recettes.json").toPromise();
   }
 
-  getRestaurantData(value: string){
-    return this.http.get<any[]>("../../assets/data/Restaurant.js");
+  getRestaurantData(){
+    return this.http.get<any[]>("../../assets/data/Restaurant.json").toPromise();
   }
 }
