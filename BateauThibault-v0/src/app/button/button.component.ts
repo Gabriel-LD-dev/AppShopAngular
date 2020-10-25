@@ -19,12 +19,13 @@ export class ButtonComponent implements OnInit {
   ngOnInit() {  }
 
   onNavigate(){
-    /*let navigationExtras: NavigationExtras = {
-      queryParams: {
-        special: this.data
+    let navigationExtras: NavigationExtras = {
+      state: {
+        data: this.data
       }
-    };*/
+    }
 
-    this.router.navigate([this.link], { state:{ data: this.data } });
+
+    this.router.navigate([this.link], navigationExtras);
   }
 }

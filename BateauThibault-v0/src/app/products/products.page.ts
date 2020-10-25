@@ -8,13 +8,27 @@ import { Router } from '@angular/router';
   styleUrls: ['./products.page.scss'],
 })
 export class ProductsPage implements OnInit {
-  products: any = [];
+  category: number;
+  products: any[];
 
-  constructor() {  }
+  constructor(private webservice: WebserviceService, private router: Router) {
+    this.category = this.router.getCurrentNavigation().extras.state.data;
+
+    webservice.getProductData(this.category).then((product) => {
+      if (this.category == 3) {
+        this.products = product.filter(el => el.sale);
+      }
+
+      else {
+        this.products = product.filter(el => el.category == this.category);
+      }
+    })
+    .catch((error) => {
+      console.log("Error : " +error);
+    });
+  }
 
   ngOnInit() {
-    this.products = history.state.data;
-    console.log(this.products);
   }
 
 }

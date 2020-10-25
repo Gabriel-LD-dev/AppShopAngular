@@ -3,3 +3,8 @@ div{
     flex: 1;
     flex-direction: column;
 }
+
+ion-content{
+    --background: url(../../assets/background.png) no-repeat center/cover fixed;
+    position: relative;
+}
