@@ -32,7 +32,7 @@ export class StoreService {
     this.val = 1;
 
     this.store.get(key).then(
-      (count) => { if(count != null) { this.val = count; } },
+      (count) => { if(count != null) { this.val = count; console.log(count); } },
 
       (error) => { console.log("Error : " + error) }
     );

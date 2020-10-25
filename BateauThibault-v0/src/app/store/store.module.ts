@@ -8,6 +8,8 @@ import { StorePageRoutingModule } from './store-routing.module';
 
 import { StorePage } from './store.page';
 
+import { HeaderComponent } from '../header/header.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +17,6 @@ import { StorePage } from './store.page';
     IonicModule,
     StorePageRoutingModule
   ],
-  declarations: [StorePage]
+  declarations: [StorePage, HeaderComponent]
 })
 export class StorePageModule {}

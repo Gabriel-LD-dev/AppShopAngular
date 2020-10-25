@@ -44,8 +44,13 @@ const routes: Routes = [
     loadChildren: () => import('./bateaux-category/bateaux-category.module').then( m => m.BateauxCategoryPageModule)
 
   },  {
+<<<<<<< HEAD
     path: 'restaurant-list',
     loadChildren: () => import('./restaurant-list/restaurant-list.module').then( m => m.RestaurantListPageModule)
+=======
+    path: 'contact',
+    loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
+>>>>>>> 9738c1a27132f52ebae8032272798bb9db36e32e
   },
 
 
