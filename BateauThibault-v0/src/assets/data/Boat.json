@@ -1,0 +1,33 @@
+[ 
+  {
+    "name": "De la Brise",
+    "imat": "XXX YYY ZZZ",
+    "image": "../assets/deLaBrise2x.png",
+    "description": "Qu'il est chaud le soleil \n Quand nous sommes en vacances \n Y a d' la joie, des hirondelles \n C'est le sud de la France \n Papa bricole au garage \n Maman lit dans la chaise longue \n Dans ce joli paysage \n Moi, je me balade en tongs \n Que de bonheur ! "
+    
+  },
+
+  {
+    "name": "Saphir",
+    "imat": "XXX YYY ZZZ",
+    "image": "../assets/saphir2x.png",
+    "description": "Qu'il est chaud le soleil \n Quand nous sommes en vacances \n Y a d' la joie, des hirondelles \n C'est le sud de la France \n Papa bricole au garage \n Maman lit dans la chaise longue \n Dans ce joli paysage \n Moi, je me balade en tongs \n Que de bonheur ! "
+    
+  },
+
+   {
+    "name": "Gast Micher",
+    "imat": "XXX YYY ZZZ",
+    "image": "../assets/gastMicher2x.png",
+    "description": "Qu'il est chaud le soleil \n Quand nous sommes en vacances \n Y a d' la joie, des hirondelles \n C'est le sud de la France \n Papa bricole au garage \n Maman lit dans la chaise longue \n Dans ce joli paysage \n Moi, je me balade en tongs \n Que de bonheur ! "
+    
+  },
+
+   {
+    "name": "Aquilon",
+    "imat": "XXX YYY ZZZ",
+    "image":"../assets/aquilon2x.png",
+    "description": "Qu'il est chaud le soleil \n Quand nous sommes en vacances \n Y a d' la joie, des hirondelles \n C'est le sud de la France \n Papa bricole au garage \n Maman lit dans la chaise longue \n Dans ce joli paysage \n Moi, je me balade en tongs \n Que de bonheur ! "
+  }
+
+]

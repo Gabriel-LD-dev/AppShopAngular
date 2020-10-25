@@ -22,7 +22,19 @@ const routes: Routes = [
   {
     path: 'product-category',
     loadChildren: () => import('./product-category/product-category.module').then( m => m.ProductCategoryPageModule)
+  },  {
+    path: 'bateaux',
+    loadChildren: () => import('./bateaux/bateaux.module').then( m => m.BateauxPageModule)
   },
+  {
+    path: 'restaurant',
+    loadChildren: () => import('./restaurant/restaurant.module').then( m => m.RestaurantPageModule)
+  },
+  {
+    path: 'bateaux-category',
+    loadChildren: () => import('./bateaux-category/bateaux-category.module').then( m => m.BateauxCategoryPageModule)
+  },
+
 ];
 
 @NgModule({
