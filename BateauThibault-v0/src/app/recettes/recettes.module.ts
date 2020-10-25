@@ -8,6 +8,9 @@ import { RecettesPageRoutingModule } from './recettes-routing.module';
 
 import { RecettesPage } from './recettes.page';
 
+import { ButtonComponent } from '../button/button.component';
+import { HeaderComponent } from '../header/header.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +18,6 @@ import { RecettesPage } from './recettes.page';
     IonicModule,
     RecettesPageRoutingModule
   ],
-  declarations: [RecettesPage]
+  declarations: [RecettesPage, ButtonComponent, HeaderComponent]
 })
 export class RecettesPageModule {}
