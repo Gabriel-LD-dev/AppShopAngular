@@ -1,9 +1,9 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>store</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header></app-header>
 
 <ion-content>
-
+  <ion-list *ngFor="let product of cart">
+    <p>
+      {{ product.key }}
+    </p>
+  </ion-list>
 </ion-content>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { StoreService } from '../services/store.service';
+import { Storage } from '@ionic/storage';
 
 @Component({
   selector: 'app-store',
@@ -7,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StorePage implements OnInit {
 
-  constructor() { }
+  cart: any[] = [];
+
+  constructor(store: Storage) {
+    store.forEach((value, key, index) => { this.cart.push({value: value, key: key}); console.log("key : " + key, "value : " + value); } );
+    console.log(this.cart);
+  }
 
   ngOnInit() {
   }
