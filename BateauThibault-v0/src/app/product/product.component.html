@@ -1,0 +1,9 @@
+<ion-button *ngIf="!add" (click)="store.addProduct(key); add = true" expand="full">
+  <ion-img src="../../assets/poulpe.png"></ion-img>
+  {{ key }}     Quantité : {{ count }}
+</ion-button>
+
+<ion-button *ngIf="add" (click)="store.removeProduct(key); add = false" expand="full">
+  <ion-img src="../../assets/poulpe.png"></ion-img>
+  {{ key }}     Quantité : {{ count }}
+</ion-button>

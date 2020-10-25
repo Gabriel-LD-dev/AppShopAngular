@@ -18,6 +18,6 @@ import { ButtonComponent } from '../button/button.component';
     IonicModule,
     ProductCategoryPageRoutingModule
   ],
-  declarations: [ProductCategoryPage, HeaderComponent, ButtonComponent]
+  declarations: [ProductCategoryPage, HeaderComponent, ButtonComponent,]
 })
 export class ProductCategoryPageModule {}

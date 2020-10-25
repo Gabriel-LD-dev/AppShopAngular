@@ -10,11 +10,12 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { IonicStorageModule } from '@ionic/Storage';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, FlexLayoutModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, FlexLayoutModule, IonicStorageModule.forRoot()],
   providers: [
     StatusBar,
     SplashScreen,

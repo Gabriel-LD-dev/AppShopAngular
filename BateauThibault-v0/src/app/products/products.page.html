@@ -4,10 +4,8 @@
 
   <p>Choisissez votre catégorie de produits</p>
 
-  <ion-list>
-      <ion-item *ngFor="let product of products"> 
-      <img src="../../assets/poulpe.png" alt="poulpe" width="32px">
-      <ion-label> {{ product.name }} </ion-label> {{ product.price }} €
-      </ion-item>
-  </ion-list>
+  <ion-item *ngFor="let product of products">
+    <app-product [key]="product.name"></app-product>
+  </ion-item>
+  
 </ion-content>
