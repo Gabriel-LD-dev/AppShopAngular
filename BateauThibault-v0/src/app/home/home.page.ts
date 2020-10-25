@@ -29,7 +29,7 @@ export class HomePage {
     {
       name: "Recettes",
       img: '../../assets/recette.png',
-      link: "/recettes"
+      link: "/recette-category"
     },
 
     {

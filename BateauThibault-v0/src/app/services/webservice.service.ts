@@ -21,11 +21,11 @@ export class WebserviceService {
     return this.http.get<any[]>("../../assets/data/Boat.json").toPromise();
   }
 
-  getRecetteData(){
-    return this.http.get<any[]>("../../assets/data/Recettes.js");
+  getRecetteData(value: string){
+    return this.http.get<any[]>("../../assets/data/Recettes.json").toPromise();
   }
 
-  getRestaurantData(){
+  getRestaurantData(value: string){
     return this.http.get<any[]>("../../assets/data/Restaurant.js");
   }
 }
