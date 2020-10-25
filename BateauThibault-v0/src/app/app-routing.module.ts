@@ -22,11 +22,16 @@ const routes: Routes = [
   {
     path: 'product-category',
     loadChildren: () => import('./product-category/product-category.module').then( m => m.ProductCategoryPageModule)
-  },  {
-<<<<<<< HEAD
+  },
+  {
+    path: 'recette-category',
+    loadChildren: () => import('./recette-category/recette-category.module').then( m => m.RecetteCategoryPageModule)
+  },
+  {
+
     path: 'store',
     loadChildren: () => import('./store/store.module').then( m => m.StorePageModule)
-=======
+  },{
     path: 'bateaux',
     loadChildren: () => import('./bateaux/bateaux.module').then( m => m.BateauxPageModule)
   },
@@ -37,7 +42,7 @@ const routes: Routes = [
   {
     path: 'bateaux-category',
     loadChildren: () => import('./bateaux-category/bateaux-category.module').then( m => m.BateauxCategoryPageModule)
->>>>>>> 19a0bf76594c030362b4551f4057e410a9466ad7
+
   },
 
 ];
